@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from "react";
-import type { TrainingPlan, Session, Activity } from "@/data/trainingPlan";
+import type { TrainingPlan, Session, Activity } from "@/types/training";
 
 type Props = { plan: TrainingPlan };
 
