@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build and coverage output
+dist/
+build/
+out/
+.next/
+coverage/
+.nyc_output/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Caches and temporary files
+.cache/
+.parcel-cache/
+.turbo/
+*.log
+*.tmp
+*.temp
+
+# IDE and operating system files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+
+# Local certificates and secrets
+*.pem
+*.key
