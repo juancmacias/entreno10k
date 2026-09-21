@@ -376,8 +376,6 @@ export default function AppShell() {
           </button>
         </nav>
 
-
-
         {view === "training" && (
           <>
          

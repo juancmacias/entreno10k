@@ -21,15 +21,28 @@ export function useAccessibility() {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("training-10k-accessibility", JSON.stringify({
-      fontScale, highContrast, reduceMotion, voiceEnabled
-    }));
+    localStorage.setItem(
+      "training-10k-accessibility",
+      JSON.stringify({ fontScale, highContrast, reduceMotion, voiceEnabled })
+    );
   }, [fontScale, highContrast, reduceMotion, voiceEnabled]);
 
+  const reset = () => {
+    setFontScale(100);
+    setHighContrast(false);
+    setReduceMotion(false);
+    setVoiceEnabled(true);
+  };
+
   return {
-    fontScale, setFontScale,
-    highContrast, setHighContrast,
-    reduceMotion, setReduceMotion,
-    voiceEnabled, setVoiceEnabled
+    fontScale,
+    setFontScale,
+    highContrast,
+    setHighContrast,
+    reduceMotion,
+    setReduceMotion,
+    voiceEnabled,
+    setVoiceEnabled,
+    reset
   };
 }
